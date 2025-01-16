@@ -106,6 +106,7 @@ namespace WindowsFormsApp1
             textBox2.Text = "";
             Captha();
         }
+
         private void Captha()
         {
             CaptchaToImage();
@@ -115,6 +116,7 @@ namespace WindowsFormsApp1
             pictureBox3.Visible = true;
             this.Height = 539;
         }
+
         private void CaptchaToImage()
         {
             Random random = new Random();
@@ -152,6 +154,11 @@ namespace WindowsFormsApp1
             }
 
             pictureBox3.Image = bmp;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
